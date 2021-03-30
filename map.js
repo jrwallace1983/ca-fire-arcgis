@@ -1,7 +1,7 @@
 require([
   "esri/Map",
   "esri/views/MapView",
-  "esri/layers/FeatureLayer",
+  "esri/layers/FeatureLayer"
 ], function (Map, MapView, FeatureLayer) {
   const map = new Map({
     basemap: "hybrid",
@@ -83,7 +83,8 @@ require([
   });
   view.when(() => {
     map.add(firePerimeterLayer, 0);
-    view.ui.add(Buttons, "bottom-left");
+    //view.ui.add(Buttons, "bottom-left");
     console.log(firePerimeterLayer);
+    test("thisis a test")
   });
 });

@@ -20,14 +20,25 @@
       rel="stylesheet"
       href="https://js.arcgis.com/4.18/esri/themes/dark/main.css"
     />
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://js.arcgis.com/4.18/"></script>
+    <script src="./test.js"></script>
     <script src="./map.js"></script>
   </head>
   <body>
-    <div id="viewDiv"></div>
-    <div id="buttons">
-      <button id="prev">Previous</button>
-      <button id="next">Next</button>
+    <div>
+      <nav>this is the nav</nav>
+      <main class="main" style="height: 100%; width: 100%">
+        <div id="viewDiv"></div>
+
+        <aside>
+          <div id="buttons">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+          </div>
+        </aside>
+      </main>
+      <footer>The footer</footer>
     </div>
   </body>
 </html>
